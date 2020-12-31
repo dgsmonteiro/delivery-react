@@ -22,23 +22,23 @@ class ListProducts extends Component {
 
 		let columns = [
 			{
-				title: "Title",
+				title: "Título",
 				dataIndex: "title"
 			},
 			{
-				title: "Description",
+				title: "Descrição",
 				dataIndex: "description"
 			},
 			{
-				title: "Price",
+				title: "Preço",
 				dataIndex: "price"
 			},
 			{
-				title: "Action",
+				title: "Ação",
 				render: (text, record) => (
 					<div>
-						<Link to={`/admin/products/${record._id}`}><Button>Edit</Button></Link>&nbsp;&nbsp;
-						<Button>Delete</Button>
+						<Link to={`/admin/products/${record._id}`}><Button>Editar</Button></Link>&nbsp;&nbsp;
+						<Button>Apagar</Button>
 					</div>
 				)
 			}

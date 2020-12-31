@@ -14,9 +14,9 @@ class CartThankYou extends React.Component {
 					<div className="emptyCartContainer">
 						<div className="emptyCart">
 							<img className="emptyCartImg" src="/static/img/shopping-cart.svg" />
-							<div className="emptyCartText">Thank you for your purchase!</div>
-							<div className="emptyCartText">We will contact you soon.</div>
-							<Link to="/"><button className="blueButton">Back to catalog</button></Link>
+							<div className="emptyCartText">Obrigado pelo seu pedido!</div>
+							<div className="emptyCartText">Nós entraremos em contato em brave.</div>
+							<Link to="/"><button className="blueButton">Voltar ao cardápio</button></Link>
 						</div>
 					</div>
 				</div>

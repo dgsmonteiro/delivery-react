@@ -32,13 +32,13 @@ class Cart extends React.Component {
 		return (
 			<React.Fragment>
 				<img className="emptyCartImg" src="/static/img/shopping-cart.svg" />
-				<div className="cartTitle">Your shopping cart</div>
+				<div className="cartTitle">Seu pedido</div>
 				<div className="cartContainer">
 					<CartTable disableDelete={this.state.checkout}/>
 					{
 						!this.state.checkout &&
 						(
-							<button className="blueButton checkoutButton" onClick={this.handleCheckout}>Checkout</button>
+							<button className="blueButton checkoutButton" onClick={this.handleCheckout}>Pedir</button>
 						)
 					}
 				</div>

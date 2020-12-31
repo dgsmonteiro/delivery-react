@@ -20,10 +20,10 @@ class Login extends Component {
 				this.props.history.push("/admin");
 			} else if (response.result === "connection_error") {
 				this.setState({ loginError: '' } );
-				this.setState({ loginError: 'The problem with connection to server!' } );
+				this.setState({ loginError: 'Temos um problema com o servidor!' } );
 			} else {
 				this.setState({ loginError: '' } );
-				this.setState({ loginError: 'The combination of username and password is incorrect!' } );
+				this.setState({ loginError: 'A combinação de usuário e senha está incorreta!' } );
 			}
 		});
 	};
@@ -45,9 +45,9 @@ class Login extends Component {
 				validateOnChange={false}
 				validationSchema={Yup.object().shape({
 					username: Yup.string()
-						.required('Required'),
+						.required('Obrigatório'),
 					password: Yup.string()
-						.required('Required')
+						.required('Obrigatório')
 				})}
 				initialValues={{ username: '', password: '' }}
 				onSubmit={this.onLogin}>
@@ -63,7 +63,7 @@ class Login extends Component {
 				}) => (
 					<div className="loginPage">
 						<div className="loginContainer">
-							<div className="loginTitle">Sign In</div>
+							<div className="loginTitle">Entrar</div>
 							<div className="loginError">
 								{this.state.loginError && (
 									<Alert
@@ -100,9 +100,7 @@ class Login extends Component {
 							<div className="loginActions">
 								<Button type="primary" className="loginSignInButton" onClick={handleSubmit}>Sign In</Button>
 							</div>
-							<div className="loginActions">
-								<div className="loginHint">Hint: demo / demo</div>
-							</div>
+
 						</div>
 					</div>
 				)}

@@ -105,7 +105,7 @@ class CropDialog extends Component {
 
 		return (
 					<Modal
-						title="Select image"
+						title="Selecionar Imagem..."
 						wrapClassName="cropImageModal"
 						width="90vw"
 						style={{ top: 20 }}
@@ -127,7 +127,7 @@ class CropDialog extends Component {
 						</div>
 						<UploadButton onFileSelected={this.fileSelected}/>
 						<br />
-						<p>Cropped image:</p>
+						<p>Imagem recortada:</p>
 						<div className="cropped-image-layout">
 							<div className="cropped-image-wrapper">
 								{croppedImageUrl && (

@@ -45,7 +45,7 @@ class Product extends Component {
 						<React.Fragment>
 							<div className='form-head'>
 								<div className='form-title'>
-									Product Loading...
+									Carregando Produto...
 								</div>
 								<div className='form-space_between'>&nbsp;</div>
 							</div>
@@ -68,7 +68,7 @@ class Product extends Component {
 								<div className='form-space_between'>&nbsp;</div>
 								{!editable &&
 								<div className='form-toolbar'>
-									<Button type="primary" onClick={onEditEnable}>Edit</Button>
+									<Button type="primary" onClick={onEditEnable}>Editar</Button>
 								</div>
 								}
 							</div>
@@ -76,7 +76,7 @@ class Product extends Component {
 							{editable &&
 							<div className='form-bottom'>
 								<Button type="primary">Submit</Button>
-								<Button onClick={onEditDisable} style={{ marginLeft: '10px' }}>Cancel</Button>
+								<Button onClick={onEditDisable} style={{ marginLeft: '10px' }}>Cancelar</Button>
 							</div>
 							}
 						</React.Fragment>

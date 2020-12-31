@@ -46,7 +46,7 @@ const config = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Hello Webpack bundled JavaScript Project',
+			title: 'Top Lanches Administração',
 			template: './src/index.html'
 		}),
 		new CopyWebpackPlugin([

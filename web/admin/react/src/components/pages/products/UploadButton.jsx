@@ -37,7 +37,7 @@ class UploadButton extends Component {
 					onChange={this.handleChange}
 				/>
 				<Button className="upload-button" type="primary" onClick={this.handleSelect}>
-					<Icon type="upload" /> Select file...
+					<Icon type="upload" /> Selecionar arquivo...
 				</Button>
 			</React.Fragment>
 		);

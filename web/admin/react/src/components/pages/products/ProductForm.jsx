@@ -15,13 +15,13 @@ class ProductFormInner extends Component {
 		return (
 			<div className='form-content'>
 				<div>{this.props.product.title}</div>
-				<Form.Item label="Title">
+				<Form.Item label="Título">
 					<Field as={Input} name='title' disabled={!editable} />
 				</Form.Item>
-				<Form.Item label="Description">
+				<Form.Item label="Descrição">
 					<Field as={Input.TextArea} name='description' rows={5} disabled={!editable} />
 				</Form.Item>
-				<Form.Item label="Price">
+				<Form.Item label="Preço">
 					<Field as={Input} name='price' disabled={!editable} />
 				</Form.Item>
 			</div>

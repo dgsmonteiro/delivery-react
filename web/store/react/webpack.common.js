@@ -50,7 +50,7 @@ const clientConfig = {
 			{from: 'src/assets/img', to:'img'}
 		]),
 		new HtmlWebpackPlugin({
-			title: 'FoodDelivery - delicious food within minutes',
+			title: 'TopLanche - Um lanche delicioso em minutos',
 			template: './src/index.html'
 		})
 	]

@@ -8,7 +8,7 @@ import config from "../../../config";
 import {withRouter} from "react-router";
 
 const _BackButton = (props) =>
-	<Button type="primary" onClick={ () => props.history.goBack() }>Back</Button>;
+	<Button type="primary" onClick={ () => props.history.goBack() }>Voltar</Button>;
 
 const BackButton = withRouter(_BackButton);
 
@@ -119,7 +119,7 @@ class Orders extends Component {
 							<React.Fragment>
 								<div className='form-head'>
 									<div className='form-title'>
-										Order
+										Pedido
 									</div>
 									<div className='form-space_between'>&nbsp;</div>
 									{!editable &&
@@ -130,29 +130,29 @@ class Orders extends Component {
 									}
 								</div>
 								<div className='form-content'>
-									<Form.Item label="Name">
+									<Form.Item label="Nome">
 										<Field as={Input} name='name' disabled={!editable} />
 									</Form.Item>
-									<Form.Item label="Phone">
+									<Form.Item label="Telefone">
 										<Field as={Input} name='phone' disabled={!editable} />
 									</Form.Item>
-									<Form.Item label="Address">
+									<Form.Item label="Endereço">
 										<Field as={Input.TextArea} name='address' rows={5} disabled={!editable} />
 									</Form.Item>
-									<Form.Item label="Client's comment">
+									<Form.Item label="Comentário do Cliente">
 										<Field as={Input.TextArea} name='comment' rows={5} disabled={!editable} />
 									</Form.Item>
-									<Form.Item label="Our comment">
+									<Form.Item label="Nosso Comentário">
 										<Field as={Input.TextArea} name='comment' rows={5} disabled={!editable} />
 									</Form.Item>
-									<Form.Item label="Cart Items">
+									<Form.Item label="Itens no Carrinho">
 									<CartTable order={this.props.order}/>
 									</Form.Item>
 								</div>
 								{editable &&
 								<div className='form-bottom'>
-									<Button type="primary">Submit</Button>
-									<Button onClick={onEditDisable} style={{ marginLeft: '10px' }}>Cancel</Button>
+									<Button type="primary">Enviar</Button>
+									<Button onClick={onEditDisable} style={{ marginLeft: '10px' }}>Cancelar</Button>
 								</div>
 								}
 							</React.Fragment>

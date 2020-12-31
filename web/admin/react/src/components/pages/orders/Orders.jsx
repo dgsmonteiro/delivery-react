@@ -35,49 +35,49 @@ class Orders extends Component {
 		const availableButtons = {
 			[ordersStatus.NEW]:
 				[
-					{	title: 'Verify', newStatus: ordersStatus.VERIFIED },
-					{	title: 'Decline', newStatus: ordersStatus.CANCELED }
+					{	title: 'Verificar', newStatus: ordersStatus.VERIFIED },
+					{	title: 'Recusar', newStatus: ordersStatus.CANCELED }
 				],
 			[ordersStatus.VERIFIED]:
 				[
-					{	title: 'In work', newStatus: ordersStatus.IN_WORK },
-					{	title: 'Cancel', newStatus: ordersStatus.CANCELED }
+					{	title: 'Em Preparação', newStatus: ordersStatus.IN_WORK },
+					{	title: 'Cancelar', newStatus: ordersStatus.CANCELED }
 				],
 			[ordersStatus.IN_WORK]:
 				[
-					{	title: 'Ready', newStatus: ordersStatus.READY_FOR_DELIVERY },
-					{	title: 'Cancel', newStatus: ordersStatus.CANCELED }
+					{	title: 'Pronto', newStatus: ordersStatus.READY_FOR_DELIVERY },
+					{	title: 'Cancelar', newStatus: ordersStatus.CANCELED }
 				],
 			[ordersStatus.READY_FOR_DELIVERY]:
 				[
-					{	title: 'To delivery', newStatus: ordersStatus.ON_DELIVERY },
-					{	title: 'Cancel', newStatus: ordersStatus.CANCELED }
+					{	title: 'Entregar', newStatus: ordersStatus.ON_DELIVERY },
+					{	title: 'Cancelar', newStatus: ordersStatus.CANCELED }
 				],
 			[ordersStatus.ON_DELIVERY]:
 				[
-					{	title: 'Completed', newStatus: ordersStatus.COMPLETED },
-					{	title: 'Cancel', newStatus: ordersStatus.CANCELED }
+					{	title: 'Concluído', newStatus: ordersStatus.COMPLETED },
+					{	title: 'Cancelar', newStatus: ordersStatus.CANCELED }
 				],
 		};
 
 		let columns = [
 			{
-				title: "Name",
+				title: "Nome",
 				dataIndex: "orderInfo.name"
 			},
 			{
-				title: "Phone",
+				title: "Telefone",
 				dataIndex: "orderInfo.phone"
 			},
 			{
-				title: "Address",
+				title: "Endereço",
 				dataIndex: "orderInfo.address"
 			},
 			{
-				title: "Action",
+				title: "Ação",
 				render: (text, record) => (
 					<div>
-						<Link to={`/admin/orders/view/${record._id}`}><Button>View</Button></Link>&nbsp;&nbsp;
+						<Link to={`/admin/orders/view/${record._id}`}><Button>Ver</Button></Link>&nbsp;&nbsp;
 						{availableButtons[this.props.orderStatus] && availableButtons[this.props.orderStatus].map(
 							(button) => (
 								<React.Fragment>

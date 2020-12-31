@@ -12,8 +12,8 @@ class CartEmpty extends React.Component {
 			<div className="emptyCartContainer">
 				<div className="emptyCart">
 					<img className="emptyCartImg" src="/static/img/shopping-cart.svg" />
-					<div className="emptyCartText">YOUR CART IS EMPTY</div>
-					<Link to="/"><button className="blueButton">Back to catalog</button></Link>
+					<div className="emptyCartText">SEU CARRINHO ESTÁ VAZIO</div>
+					<Link to="/"><button className="blueButton">Voltar ao Cardápio</button></Link>
 				</div>
 			</div>
 		);

@@ -13,7 +13,7 @@ function login(req, res) {
 		errorText: 'Invalid login or password'
 	};
 
-	if (authData.login === 'demo' && authData.password === 'demo') {
+	if (authData.login === 'admin' && authData.password === 'admin') {
 		const payload = {
 			user_id: 'sdfsdfsd',
 			role: 'admin'

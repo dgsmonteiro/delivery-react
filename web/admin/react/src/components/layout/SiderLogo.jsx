@@ -4,8 +4,8 @@ class SiderLogo extends Component {
 	render() {
 		return (
 					<div className="logo">
-						<span className="logo1">F</span>
-						<span className="logo2">D</span>
+						<span className="logo1">Top</span>
+						<span className="logo2">Lanches</span>
 					</div>
 		);
 	}

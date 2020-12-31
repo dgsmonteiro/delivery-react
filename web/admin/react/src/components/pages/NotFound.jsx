@@ -16,7 +16,7 @@ class Login extends Component {
 		return (
 			<div className="p404container">
 				<h1 className="p404title">404</h1>
-				<div className="p404text">That page doesn't exist.</div>
+				<div className="p404text">Essa Página não existe.</div>
 			</div>
 		);
 	}

@@ -11,7 +11,7 @@ class CartTable extends React.Component {
 	}
 
 	handleDelete = (product_id) => {
-		console.log('Deleting ' + product_id);
+		console.log('Apagando ' + product_id);
 
 		this.props.updateCartItem(product_id, 0);
 	};
@@ -53,7 +53,7 @@ class CartTable extends React.Component {
 							<div className="cart-prod-head">{item.title}</div>
 							<p className="cart-prod-desc">{item.description}</p>
 							</div>
-							<div className="cart-prod-prc">${displayCurrency(price)}</div>
+							<div className="cart-prod-prc">R${displayCurrency(price)}</div>
 							<div className="cart-prod-mul">x</div>
 							<div className="cart-prod-qty">
 								<input type="text" value={item.qty} />
@@ -65,20 +65,20 @@ class CartTable extends React.Component {
 										<button className="remove-cart-prod" onClick={() => {
 											this.handleDelete(item.product_id)
 										}}>
-											Remove
+											Remover
 										</button>
 									)
 							}
 							</div>
 							<div className="cart-prod-prc-spacer" />
-							<div className="cart-prod-line-prc">${displayCurrency(total)}</div>
+							<div className="cart-prod-line-prc">R${displayCurrency(total)}</div>
 						</div>
 					);
 				})
 			}
 			<div className="cart-prod">
 				<div className="cart-total">TOTAL</div>
-				<div className="cart-prod-line-prc">${displayCurrency(cartTotal.totalPrice)}</div>
+				<div className="cart-prod-line-prc">R${displayCurrency(cartTotal.totalPrice)}</div>
 			</div>
 
 			</React.Fragment>
