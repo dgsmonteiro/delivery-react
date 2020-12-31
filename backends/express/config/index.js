@@ -9,7 +9,7 @@ if ('SHOW_STACKTRACE' in process.env) {
 	showStacktrace = process.env.SHOW_STACKTRACE;
 }
 
-const prodApiBaseUrl = 'https://api.food-delivery.mishast.com/';
+const prodApiBaseUrl = 'https://191.252.201.155/';
 const devApiBaseUrl = 'http://localhost:2000/';
 
 const config = {
