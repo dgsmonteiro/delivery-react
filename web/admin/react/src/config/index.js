@@ -1,4 +1,4 @@
-const prodApiBaseUrl = 'https://api.food-delivery.mishast.com/';
+const prodApiBaseUrl = 'https://191.252.201.155/';
 const devApiBaseUrl = 'http://localhost:2000/';
 
 const config = {
