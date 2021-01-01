@@ -9,7 +9,7 @@ class CartIcon extends React.Component {
 		let itemsCount = this.props.cart.reduce((acc, item) => acc + item.qty, 0);
 
 		return (
-			<Link to="/cart">
+			<Link to="/cart" style={{ textDecoration: 'none' }}>
 				<div className="cartIcon">
 					<i className="fa fa-shopping-cart" aria-hidden="true"></i>
 					{itemsCount > 0 &&

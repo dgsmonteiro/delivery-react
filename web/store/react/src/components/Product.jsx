@@ -19,7 +19,7 @@ class Product extends React.Component {
 						<h1>{this.props.title}</h1>
 						<h2>{this.props.description}</h2>
 						<div className="price">R${this.props.price}</div>
-						<div className="button" onClick={this.buy}><i className="fa fa-cart-plus" aria-hidden="true"></i>
+						<div className="button" onClick={this.buy}><i className="fa fa-plus" aria-hidden="true"></i>
 </div>
 					</div>
 			</div>

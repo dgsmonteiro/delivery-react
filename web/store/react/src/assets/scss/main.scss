@@ -72,7 +72,7 @@ header {
 }
 
 .logo_part1 {
-    color: #fe4c50;
+    color: yellow;
 }
 
 .logo_part2 {
@@ -88,6 +88,7 @@ header {
   	align-items: center;
 	  justify-content: center;
 	  position: relative;
+	  color: black;
 }
 
 .products {
@@ -157,14 +158,14 @@ header {
 
 
 .product .bottom .button {
-    background-color: orange;
+    background-color: yellow;
     width: 64px;
     line-height: 36px;
     padding: 0 16px;
     border-radius: 4px;
     vertical-align: baseline;
     text-align: center;
-    color: #fff;
+    color: black;
     font-family: Roboto, 'Helvetica Neue', sans-serif;
     margin-top: 8px;
 	  margin-bottom: 20px;
@@ -208,8 +209,8 @@ footer {
 	top: -2px;
 	right: -3px;
 	border-radius: 50%;
-	background: red;
-	color: white;
+	background: yellow;
+	color: black;
 	font-size: 10px;
 	font-weight: bolder;
 	width: 15px;
@@ -274,12 +275,12 @@ footer {
 }
 
 .blueButton {
-	background-color: #2566f9;
+	background-color: yellow;
 	line-height: 36px;
 	padding: 0 30px;
 	vertical-align: baseline;
 	text-align: center;
-	color: #fff;
+	color: black;
 	font-family: Roboto,Helvetica Neue,sans-serif;
 	font-weight: 800;
 	font-size: 14px;
@@ -527,7 +528,7 @@ input:focus, textarea:focus {
 	.remove-cart-prod {
 	  border: 0;
 	  padding: 4px 8px;
-	  background-color: #c66;
+	  background-color: red;
 	  color: #fff;
 	  font-size: 12px;
 	  border-radius: 3px;

@@ -50,8 +50,9 @@ class CartTable extends React.Component {
 								<img className="cart-prod-img" src={imageUrl} />
 							</div>
 							<div className="cart-prod-det">
-							<div className="cart-prod-head">{item.title}</div>
-							<p className="cart-prod-desc">{item.description}</p>
+								<div className="cart-prod-head">{item.title}</div>
+								<p className="cart-prod-desc">{item.description}</p>
+							{/* colocar aqui itam-additional e item-coment */}
 							</div>
 							<div className="cart-prod-prc">R${displayCurrency(price)}</div>
 							<div className="cart-prod-mul">x</div>
