@@ -954,7 +954,7 @@ class Header_Header extends external_react_default.a.Component {
 
 /* harmony default export */ var components_Header = (Header_Header);
 // CONCATENATED MODULE: ./src/config/index.js
-const prodApiBaseUrl = 'https://191.252.201.155/';
+const prodApiBaseUrl = 'https://191.252.201.155:2000/';
 const devApiBaseUrl = 'http://localhost:2000/';
 const config = {
   apiBaseUrl:  true ? prodApiBaseUrl : undefined
