@@ -9,8 +9,8 @@ if ('SHOW_STACKTRACE' in process.env) {
 	showStacktrace = process.env.SHOW_STACKTRACE;
 }
 
-const prodApiBaseUrl = 'https://191.252.201.155/';
-const devApiBaseUrl = 'http://localhost:2000/';
+const prodApiBaseUrl = 'http://191.252.201.155:2000/';
+const devApiBaseUrl = 'http://191.252.201.155:2000/';
 
 const config = {
 	env: process.env.NODE_ENV || 'development',
@@ -18,7 +18,7 @@ const config = {
 		host: process.env.HOST || '0.0.0.0',
 		port: process.env.PORT || 2000
 	},
-	mongoUrl: 'mongodb://localhost/foodDelivery',
+	mongoUrl: 'mongodb://191.252.201.155:27017/foodDelivery',
 	jwtSecret: process.env.JWT_SECRET || 'sdfsdfsdf',
 	uploadDir: path.join(__dirname, '../upload'),
 	showStacktrace,

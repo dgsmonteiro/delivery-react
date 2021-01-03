@@ -15,116 +15,116 @@ mongo.connect(async db => {
 
 	await db.collection('products').insertMany([
 		{
-			title: 'Sushi and caviar mix',
-			description: 'Sushi & caviar mix',
+			title: 'Mix de sushi e caviar',
+			description: 'Mix de sushi e caviar',
 			image: {
 				id: '368d575c-f0ed-11e9-a713-2a2ae2dbcce4',
 				filename: 'sushi_3_1000x1600_yfdxvp_f25npp.jpg'
 			},
-			price: '10.99'
+			price: '99.99'
 		},
 		{
-			title: 'Mix of 23 sushi',
-			description: '23 Sushi Mix',
+			title: 'Mix de 23 sushi',
+			description: 'Mix de 23 sushi',
 			image: {
 				id: '56945ecc-f0ef-11e9-81b4-2a2ae2dbcce4',
 				filename: 'sushi_o8gcsm_fxgdij.jpg'
 			},
-			price: '15'
+			price: '25.00'
 		},
 		{
-			title: 'Pepperoni and tomato',
-			description: 'Pepperoni & tomato',
+			title: 'Pizza de pepperoni com tomate',
+			description: 'Pizza de pepperoni com tomate e manjericão',
 			image: {
 				id: '4bb3a936-f0ef-11e9-81b4-2a2ae2dbcce4',
 				filename: 'pizza_2_duoq0f_zahy7o.jpg'
 			},
-			price: '10.5'
+			price: '35.00'
 		},
 		{
-			title: 'Vegan Baguette & Wrap Platter',
+			title: 'Kit Baguettes & Wraps Veganos',
 			description:
-				"Why not try our new Vegan Baguette and Wrap platter - it has such amazing fillings that you won't regret it.",
+				"Kit para festas de Baguettes & Wraps Veganos",
 			image: {
 				id: '6951ab9a-f0f0-11e9-81b4-2a2ae2dbcce4',
 				filename: 'veganSandwitchPlatter_Hero.jpg'
 			},
-			price: '4'
+			price: '49.99'
 		},
 		{
-			title: 'Beef hamburger',
+			title: 'Big Mac',
 			description:
-				'A delicious hamburger with two steaks of 100% beef with onions, two slices of pickled cucumbers, a slice of cheese, and a special sauce.',
+				'Dous hamburgeres, alface, queijo, molho especial, cebola, pickles em um pão com gergelim',
 			image: {
 				id: '3c64aeed-dc9e-4665-b975-88edd2bf66e3',
 				filename: 'beef_hamburger.jpg'
 			},
-			price: '3.5'
+			price: '35.00'
 		},
 		{
-			title: 'Chicken hamburger',
-			description: 'Fried chicken cutlet, sesame bun, sauce, iceberg lettuce.',
+			title: 'Hamburger de Frango',
+			description: 'Hamburger de Frango.',
 			image: {
 				id: '4bbd0210-f18a-11e9-81b4-2a2ae2dbcce4',
 				filename: 'chicken_hamburger.jpg'
 			},
-			price: '2.5'
+			price: '15.00'
 		},
 		{
-			title: 'Chicken wings',
-			description: 'Crispy Chicken Wings.',
+			title: 'Tulipas ao molho',
+			description: 'Porção de tulipas com molho da casa.',
 			image: {
 				id: '740e2e88-f18a-11e9-81b4-2a2ae2dbcce4',
 				filename: 'chicken_wings.jpg'
 			},
-			price: '3'
+			price: '39.99'
 		},
 		{
-			title: 'Caesar salad',
+			title: 'Salada Caesar',
 			description:
-				'A mixture of Romano and iceberg lettuce, cherry tomatoes, chicken breast fillet, croutons, cheese, Caesar sauce.',
+				'Uma mistura de alface romana e iceberg, tomate cereja, filé de peito de frango, croutons, queijo, molho César.',
 			image: {
 				id: '743ae3ee-f18d-11e9-81b4-2a2ae2dbcce4',
 				filename: 'caesar_salad.jpg'
 			},
-			price: '3.5'
+			price: '35.00'
 		},
 		{
-			title: 'Greece salad',
-			description: 'Tomatoes, cucumbers, sweet peppers, onions, olives, feta cheese, olive oil.',
+			title: 'Salada Grega',
+			description: 'Tomate, pepino, pimentão, cebola, azeitona, queijo feta, azeite de oliva.',
 			image: {
 				id: '2780dba2-f18e-11e9-81b4-2a2ae2dbcce4',
 				filename: 'greece_salad.jpg'
 			},
-			price: '3.25'
+			price: '30.00'
 		},
 		{
 			title: 'Borsch',
-			description: 'Traditional ukrainian soup with beet and pork.',
+			description: 'Sopa tradicional ucraniana com beterraba e porco.',
 			image: {
 				id: '46de98c0-f18b-11e9-81b4-2a2ae2dbcce4',
 				filename: 'borsch.jpg'
 			},
-			price: '8'
+			price: '15.00'
 		},
 		{
-			title: 'Tomato soup',
-			description: 'Tomato Soup with Mozzarella Cheese and Fresh Basil.',
+			title: 'Sopa de Tomate',
+			description: 'Sopa de Tomate com Queijo Mussarela e Manjericão Fresco.',
 			image: {
 				id: 'd11a970a-f18b-11e9-81b4-2a2ae2dbcce4',
 				filename: 'tomato_soup.jpg'
 			},
-			price: '4.5'
+			price: '20.00'
 		},
 		{
-			title: 'Champignon cream soup',
+			title: 'Sopa de Cebola',
 			description:
-				'Chicken stock, champignons, onions, garlic, sunflower oil, butter, cognac, cheese, salt, pepper.',
+				'Caldo de galinha, champignon, cebola, alho, óleo de girassol, manteiga, conhaque, queijo, sal, pimenta.',
 			image: {
 				id: '864322f0-f18c-11e9-81b4-2a2ae2dbcce4',
 				filename: 'champ_soup.jpg'
 			},
-			price: '5'
+			price: '18.99'
 		}
 	]);
 
