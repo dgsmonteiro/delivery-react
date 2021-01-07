@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode=production --config=webpack.prod.js",
+    "build:dev": "webpack --mode=development --config=webpack.dev.js",
     "start": "webpack-dev-server --config=webpack.dev.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -35,7 +36,6 @@
     "less": "^2.3.1",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
@@ -59,6 +59,7 @@
     "core-js": "^3.3.2",
     "formik": "^2.0.3",
     "lodash.throttle": "^4.1.1",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
